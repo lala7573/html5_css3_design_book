@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      .site h1 a {
+        color: #000000;
+        text-decoration: none;
+      }
+      .site h1 {
+        margin: 0;
+        font-size: 30px;
+      }
+      .site p {
+        margin: 0;
+        font-size: 12px;
+      }
+
+      .story h1 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 36px;
+      }
+      .story p {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+
+      .menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none; /* 점 삭제 */
+      }
+
+      .menu li a {
+        display: block;
+        padding: 5px;
+        color: #000000;
+        font-size: 14px;
+        text-decoration: none; /* 밑줄 제거 */
+      }
+
+      .menu li a:hover {
+        background-color: #eeeeee;
+      }
+
+      /* 메뉴 가로 정렬 */
+      .menu ul:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .menu li {
+        float: left;
+        width: auto;
+      }
+
+      .copyright p {
+        margin: 0;
+        color: #666666;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="site">
+      <h1><a href="#">TimeSwitch</a></h1>
+      <p>매일 생활과 관련된 것을 올리는 블로그</p>
+    </div>
+
+    <!-- 최근에는 글자크기와 공백을 쿠게 주는 경우가 많아지고 있음 -->
+    <!-- 글자 크기는 원래 12 ~ 14px을 주는 게 일반적이었는데, 
+      요즘에는 모바일에서의 출력을 고려해 16픽셀 이상의 글자 크기를 
+      적용하는 경우도 많아지고 있음 -->
+    <div class="story">
+      <h1>토마토를 맛있게 먹는 방법</h1>
+      <p>
+        수확한 토마토를 바로 먹고 싶어서 서울 외곽에 있는 토마토 농가에 직접
+        다녀왔습니다. 이번에 온 농가의 토마토는 신선하고 저렴하군요.
+      </p>
+      <p>
+        일반적으로 토마토는 물에 씻어서 바로 먹는 것이 가장 좋습니다. 더운 날에
+        맛있는 토마토를 먹으면 그것만으로도 행복한데요. 수분 공급도 가능해서
+        일석이조랍니다.
+      </p>
+    </div>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">메인</a></li>
+        <li><a href="#">잡화</a></li>
+        <li><a href="#">도구</a></li>
+        <li><a href="#">외출</a></li>
+        <li><a href="#">음식</a></li>
+        <li><a href="#">문의</a></li>
+      </ul>
+    </div>
+
+    <div class="copyright">
+      <p>TimeSwitch는 매일 생활과 관련된 것을 올리는 블로그 입니다</p>
+      <p>Copyright &copy; TimeSwitch</p>
+    </div>
+  </body>
+</html>

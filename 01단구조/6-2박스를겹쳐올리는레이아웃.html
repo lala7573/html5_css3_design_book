@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      .box1 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .box2 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .boxA {
+        border: solid 8px #00a0e9;
+        background-color: #a0e0fe;
+        color: #00a0e9;
+      }
+
+      .boxA .box1 {
+        border: solid 8px #e0e03d;
+        background-color: #ffffee;
+        color: #e0e03d;
+        line-height: 200px;
+      }
+
+      .boxA .box2 {
+        border: solid 8px #eb6877;
+        background-color: #ffc2c9;
+        color: #eb6877;
+        line-height: 100px;
+      }
+
+      /* 박스를 중첩하는 설정 */
+      .boxA {
+        position: relative;
+      }
+
+      .box2 {
+        position: absolute;
+        top: 65%;
+        left: 85%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxA">
+      <div class="box1">Box1</div>
+      <div class="box2">Box2</div>
+    </div>
+  </body>
+</html>

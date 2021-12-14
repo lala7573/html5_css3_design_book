@@ -1,0 +1,495 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  font-family: "맑은 고딕", "Malgun Gothic", "돋움", "Dotum", "Helvetica",
+    "Arial", sans-serif;
+}
+
+.site h1 a {
+  color: #83a3a8;
+  text-decoration: none;
+}
+.site h1 {
+  margin: 0;
+  font-size: 30px;
+  font-family: "Paytone One", sans-serif;
+  font-weight: normal;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* 점 삭제 */
+}
+
+.menu li a {
+  display: block;
+  padding: 15px;
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+.menu li a:hover {
+  background-color: #75dbe7;
+}
+
+/* 메뉴 가로 정렬 */
+.menu ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.menu li {
+  float: left;
+  width: auto;
+}
+
+.story h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.story h2 {
+  margin-top: 40px;
+  padding-left: 10px;
+  border-left: solid 10px #7cbac1;
+  font-weight: normal;
+}
+
+.story p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* 기사의 분류 */
+.story-cat {
+  margin-bottom: 25px;
+}
+.story-cat ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.story-cat li a {
+  display: block;
+  margin-right: 5px;
+  padding: 3px 5px;
+  border-radius: 2px;
+  background-color: #75dbe7;
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: none;
+}
+.story-cat li a:hover {
+  background-color: #94ecf6;
+}
+.story-cat ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.story-cat li {
+  float: left;
+  width: auto;
+}
+
+/* 기사 작성일 */
+.storyinfo {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.storyinfo i {
+  margin-right: 5px;
+  color: #aaaaaa;
+  font-size: 15px;
+}
+
+.story img {
+  max-width: 100%;
+  height: auto;
+}
+/* SNS 공유 버튼 */
+.share {
+  margin-top: 40px;
+}
+.share ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.share li a {
+  display: block;
+  padding: 10px 5px;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+.share li a:hover {
+  opacity: 0.8;
+}
+
+.share i {
+  padding-right: 5px;
+}
+
+.share ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.share li {
+  float: left;
+  width: 50%;
+}
+/* http://brandcolors.net */
+.share-tw {
+  background-color: #55acee;
+}
+.share-fb {
+  background-color: #3b5998;
+}
+
+/* 관련 기사 메뉴 */
+.relation {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f0f0d4;
+}
+.relation h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #727224;
+  font-size: 20px;
+  font-weight: normal;
+}
+.relation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.relation li a {
+  display: block;
+  padding: 5px;
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+}
+.relation li a:hover {
+  text-decoration: underline;
+}
+.relation ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.relation li {
+  float: left;
+  width: 25%;
+}
+.relation img {
+  max-width: 100%;
+  height: auto;
+  border: none; /* IE에서 border 를 없앰 */
+}
+/* 사이드 메뉴 */
+.sidemenu {
+  margin-bottom: 30px;
+}
+.sidemenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidemenu li a {
+  display: block;
+  padding: 5px;
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.sidemenu li a:hover {
+  background-color: #eeeeee;
+}
+
+.sidemenu h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: dotted 2px #dddddd;
+  color: #666666;
+  font-size: 18px;
+}
+.sidemenu i {
+  margin-right: 5px;
+  color: #888888;
+}
+
+/* 추천 기사 메뉴 */
+.recommend {
+  margin-bottom: 30px;
+}
+.recommend ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recommend li a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 0px;
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.recommend li a:hover {
+  background-color: #eeeeee;
+  opacity: 0.8;
+}
+
+.recommend h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: dotted 2px #dddddd;
+  color: #666666;
+  font-size: 18px;
+}
+
+.recommend img {
+  width: 100%;
+  height: auto;
+  border: none;
+  vertical-align: bottom;
+}
+
+.recommend .text {
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+/* 추천 기사의 메뉴의 글자를 중첩하는 설정 */
+.recommend a {
+  position: relative;
+}
+.recommend .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* 인기 기사 메뉴 */
+.popular ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.popular li a {
+  display: block;
+  padding: 5px;
+  border-bottom: dotted 1px #dddddd;
+  color: #2288bb;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.popular li a:hover {
+  background-color: #eeeeee;
+}
+
+.popular li a img {
+  border: none;
+}
+
+.popular h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: dotted 2px #dddddd;
+  color: #666666;
+  font-size: 18px;
+}
+
+.popular a:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.popular img {
+  float: left;
+  width: 60px;
+}
+
+.popular .text {
+  float: none;
+  width: auto;
+  margin-left: 60px;
+  padding-left: 15px;
+}
+
+.popular span {
+  display: block;
+  color: #666666;
+  font-size: 12px;
+}
+/* 저작권 */
+.copyright p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
+}
+
+/* navigation 색 추가 */
+.navigation {
+  background-color: #7cbac1;
+}
+
+/* footer 위에 테투리 삽입 */
+.footer {
+  border-top: solid 1px #dddddd;
+}
+
+/* 박스의 위 아래 간격 */
+.title {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.main {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.aside {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.copyright {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.title,
+.container,
+.navigation-inner,
+.footer-inner {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* ############ 599px 이하 ############ */
+@media (max-width: 599px) {
+  /* 네비게이션 */
+  .menu li a {
+    padding: 10px 3px;
+    font-size: 11px;
+  }
+  /* 사이트의 이름과 기사 제목 */
+  .site h1 {
+    font-size: 20px;
+  }
+  .story h1 {
+    font-size: 26px;
+  }
+  /* 박스의 위아래 간격 */
+  .title {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .main {
+    padding-top: 25px;
+  }
+  .share span {
+    display: inline-block;
+    text-indent: -9999px;
+  }
+  .relation {
+    padding: 10px;
+  }
+  .relation li {
+    width: 50%;
+  }
+  .relation li:nth-child(3) {
+    clear: both;
+  }
+}
+
+/* ############ 600px - 767px 이하 ############ */
+@media (min-width: 600px) and (max-width: 767px) {
+  .aside:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .aside1 {
+    float: left;
+    width: 50%;
+  }
+  .aside2 {
+    float: left;
+    width: 50%;
+  }
+  .aside1 {
+    padding-right: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  .aside2 {
+    padding-left: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+}
+
+/* ############ 768px 이상 ############ */
+@media (min-width: 768px) {
+  .main {
+    float: left;
+    width: 70%;
+  }
+  .aside {
+    float: left;
+    width: 30%;
+  }
+
+  .main {
+    padding-right: 50px;
+    /* 위 padding-right만 넣으면 레이아웃이 깨짐. 아래 추가 필요 */
+    box-sizing: border-box;
+    /* 오래된 버전의 파이어폭스, iOS 4.x, 안드로이드 2.3.x 지원 */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+}
+
+/* ############ 1040px 이상 ############ */
+@media (min-width: 1040px) {
+  /* width 를 1000px로 고정 */
+  .title,
+  .container,
+  .footer-inner,
+  .navigation-inner {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

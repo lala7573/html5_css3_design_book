@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      /* .boxA {
+  border: solid 8px #00a0e9;
+  background-color: #a0e0fe;
+  color: #00a0e9;
+} */
+      .boxA {
+        overflow: hidden;
+      }
+      /*
+위의 .boxA {overflow:hidden} 대신 아래처럼 content, clear: both 를 이용해서 적용할 수 있다.
+둘 다, box4가 box2, box3을 밀고 들어오는 것을 막음
+overflow: hidden을 적용한 박스는 css의 블록 서식 문맥(block formatting context)으로 취급되어 박스 내부의 플로팅 박스를 포함해 영역을 잡게 됨
+boxA를 벗어나는 위치에 자식요소를 배치하면 삐져나오는 부분이 숨겨진다(hidden)는 점에 주의
+*/
+
+      /* .boxA:after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+
+      .box2 {
+        border: solid 8px #eeee00;
+        background-color: #a0e0fe;
+        float: left;
+        /* width: 50%; */
+      }
+      .box3 {
+        border: solid 8px #eeee00;
+        background-color: #a0e0fe;
+        float: left;
+        /* width: 50%; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">Box1</div>
+    <div class="boxA">
+      <div class="box2">Box2</div>
+      <div class="box3">Box3</div>
+    </div>
+    <div class="box4">Box4</div>
+  </body>
+</html>

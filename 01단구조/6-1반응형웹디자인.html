@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      /*
+주요 스마트폰 또는 태블릿의 브라우저 화면 크기
+아이폰 4/4s 320x480
+아이폰 5/5s 320x568
+아이폰 6/6s 표준 375x667
+아이폰 6/6s 확대 320x568
+아이폰 6+ 표준 414x736
+아이폰 6+ 확대 375x667
+넥서스 4 384x640
+넥서스 5 360x640
+넥서스 7 600x960
+아이패드 768x1024
+넥서스 10 800x1280
+*/
+      .boxA:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .box1 {
+        background-color: #ffeeee;
+      }
+      .box2 {
+        background-color: #ffffee;
+      }
+      .box3 {
+        background-color: #eeffee;
+      }
+      .box4 {
+        background-color: #eeeeff;
+      }
+      @media (min-width: 600px) {
+        .boxB:after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+        .box2 {
+          float: right;
+          width: 75%;
+        }
+        .box3 {
+          float: left;
+          width: 25%;
+        }
+      }
+      /*
+화면의 너비가 768 픽셀 이상일 때에는 스타일 시트가 적용되어 가로 정렬되지만, 이하일 때는 가로정렬이 해제됨
+*/
+      @media (min-width: 768px) {
+        .boxB {
+          float: left;
+          width: 80%;
+        }
+        .box4 {
+          float: left;
+          width: 20%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">Box1</div>
+    <div class="boxA">
+      <div class="boxB">
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+      </div>
+      <div class="box4">Box4</div>
+    </div>
+  </body>
+</html>
