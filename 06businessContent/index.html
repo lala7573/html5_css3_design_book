@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>페이지 타이틀</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- html5shiv https://github.com/afarkas/html5shiv -->
+    <!-- respond.js https://github.com/scottjehl/Respond -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body></body>
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>페이지 타이틀</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script>
+      $(function () {
+        $("#menubtn").click(function () {
+          $("#menu").slideToggle();
+        });
+      });
+    </script>
+  </head>
+  <body class="contents">
+    <header class="top">
+      <div class="top-inner">
+        <div class="title">
+          <div class="site">
+            <h1>
+              <a href="#">
+                <!-- <img src="img/logo.png" alt="logo" width="120px" /> -->
+                <i class="fa-regular fa-snowflake"></i>TimeSwitch
+              </a>
+            </h1>
+          </div>
+        </div>
+        <div class="navigation">
+          <button type="button" id="menubtn">
+            <i class="fa fa-bars"></i><span>MENU</span>
+          </button>
+          <nav class="menu" id="menu">
+            <ul>
+              <li><a href="#">메인</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">사업 소개</a></li>
+              <li><a href="#">채용 정보</a></li>
+              <li><a href="#">문의</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="box7">
+      <div class="box7-1">
+        <article class="story">
+          <div class="bread">
+            <ol>
+              <li><a href="#">메인</a></li>
+              <li><a href="#">사업 소개</a></li>
+            </ol>
+          </div>
+          <h1>데이터 분석/해석</h1>
+          <img
+            src="https://picsum.photos/id/100/1500/600"
+            alt=""
+            class="storyimg"
+          />
+          <p class="lead">
+            축적된 데이터를 활용하려면 어떻게 분석/해석할지가 중요합니다.
+            TimeSwitch에서는 표준적인 분석 방법과 활용 목적에 따른 해석을
+            제공합니다.
+          </p>
+          <h2><i class="fa fa-check-square"></i>평균값 확인</h2>
+          <div class="story-body">
+            <p>
+              기본적인 평균입니다. 대상 데이터들의 대표적인 수치를 활용할 수
+              있습니다. 다만 평균만으로는 데이터 쏠림 등의 문제를 확인할 수
+              없습니다.
+            </p>
+            <h2><i class="fa fa-check-square"></i>분산 확인</h2>
+            <p>
+              통계적인 방법을 사용해서 축적된 데이터의 분산을 확인합니다. 분산을
+              사용하면 평균값으로는 보이지 않는 문제외 특징을 찾아낼 수
+              있습니다.
+            </p>
+            <h2><i class="fa fa-check-square"></i>상관관계/인과관계 도출</h2>
+            <p>
+              여러 개의 데이터를 조합하고 분석/해석해서 상관관계와 인과 관계가
+              있다고 생각되는 데이터를 추출합니다.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="box7-2">
+        <aside class="sidemenu">
+          <h1>
+            <i class="far fa-caret-square-down"></i>
+            사업 소개
+          </h1>
+          <ul>
+            <li><a href="#">데이터 축적</a></li>
+            <li><a href="#">데이터 분석/해석</a></li>
+            <li><a href="#">데이터 시각화</a></li>
+            <li><a href="#">애플리케이션 활용</a></li>
+            <li><a href="#">24시간 지원</a></li>
+            <li><a href="#">실적 소개</a></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="copyright">Copyright &copy; TimeSwitch</div>
+      </div>
+    </footer>
+  </body>
+</html>
